@@ -33,20 +33,20 @@
 
 		this.regexList = [
 				{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments, 		css: 'comments' },
-				{ regex: /^\s*@\w+/gm, 												css: 'decorator' },
-				{ regex: /\&lt;\-/gm, 												css: 'arrow' },
-				{ regex: /,/gm, 													css: 'comma' },
-				{ regex: /FALSE|TRUE/gm, 											css: 'bool' },
-				{ regex: /\$/gm, 													css: 'dollar' },
-				{ regex: /NaN|NA|NULL/gm, 											css: 'missing' },
-				{ regex: /(['\"]{3})([^\1])*?\1/gm, 								css: 'comments' },
-				{ regex: /"(?!")(?:\.|\\\"|[^\""\n])*"/gm, 							css: 'string' },
-				{ regex: /'(?!')(?:\.|(\\\')|[^\''\n])*'/gm, 						css: 'string' },
-				{ regex: /\+|\ - |\*|\/|\%|=|==|\||\&amp;|\&gt;|\&lt;/gm, 			css: 'operator' },
-				{ regex: /\b\d+\.?\w*/g, 											css: 'value' },
-				{ regex: new RegExp(this.getKeywords(funcs), 'gmi'),				css: 'functions' },
-				{ regex: new RegExp(this.getKeywords(keywords), 'gm'), 				css: 'keyword' },
-				{ regex: new RegExp(this.getKeywords(special), 'gm'), 				css: 'color1' }
+				{ regex: /^\s*@\w+/gm, 							css: 'decorator' },
+				{ regex: /\&lt;\-/gm, 							css: 'arrow' },
+				{ regex: /,/gm, 							css: 'comma' },
+				{ regex: /FALSE|TRUE/gm, 						css: 'bool' },
+				{ regex: /\$/gm, 							css: 'dollar' },
+				{ regex: /NaN|NA|NULL/gm, 						css: 'missing' },
+				{ regex: /(['\"]{3})([^\1])*?\1/gm, 					css: 'comments' },
+				{ regex: /"(?!")(?:\.|\\\"|[^\""\n])*"/gm, 				css: 'string' },
+				{ regex: /'(?!')(?:\.|(\\\')|[^\''\n])*'/gm, 				css: 'string' },
+				{ regex: /\+|\ - |\*|\/|\%|=|==|\||\&amp;|\&gt;|\&lt;/gm, 		css: 'operator' },
+				{ regex: /\b\d+\.?\w*/g, 						css: 'value' },
+				{ regex: new RegExp(this.getKeywords(funcs), 'gmi'),			css: 'functions' },
+				{ regex: new RegExp(this.getKeywords(keywords), 'gm'), 			css: 'keyword' },
+				{ regex: new RegExp(this.getKeywords(special), 'gm'), 			css: 'color1' }
 				];
 			
 		this.forHtmlScript(SyntaxHighlighter.regexLib.aspScriptTags);
